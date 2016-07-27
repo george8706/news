@@ -31,8 +31,7 @@ if(!isset($_POST['submitButton'])) {
         validate_date($date);
 
         if (empty($errors)) {
-
-            //$feed = new News();
+            
             $feed->id = $news_one->id;
             $feed->caption = $_POST['caption'];
             $feed->text = $_POST['text'];
