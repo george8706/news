@@ -10,14 +10,11 @@ $feed = new News();
 $news_one = $feed->getRows(['where'=>array('id'=>$_GET['id']),'return_type'=>'single']);
 if(!$news_one) redirect_to('manage_news.php');
 if(!isset($_POST['submitButton'])) {
-    //$feed = new News();
-    //$news_one = $feed->getRows(['where'=>array('id'=>$_GET['id']),'return_type'=>'single']);
-    //$id = $news_one->id;
     $caption = $news_one->caption;
     $text = $news_one->text;
     $date = date('d-m-Y',$news_one->date);
     }else{
-        //$id = $news_one->id;
+    
         $caption = htmlentities($_POST['caption']);
         $text = htmlentities($_POST['text']);
         $date = date('d-m-Y',htmlentities($_POST['date']));
