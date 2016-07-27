@@ -85,7 +85,7 @@ if(isset($_POST['submitButton'])) {
             </div>
             <div class="clearfix"></div>
             <div class="form-group">
-                <button type="submit" name="submitButton" class="btn btn-success">Submit</button>
+                <button type="submit" name="submitButton" class="btn btn-success">Add</button>
             </div>
 
         </form>
