@@ -1,6 +1,6 @@
 
 <?php require_once("../includes/initialize.php"); ?>
-
+<?php $page_title = "News"?>
 <?php include('layouts/header.php'); ?>
 
 <?php

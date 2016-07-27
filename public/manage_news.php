@@ -1,7 +1,8 @@
 <?php require_once('../includes/initialize.php');?>
 
 <?php $current_page = 'manage_news';?>
-<?php include_layout_template('header.php');?>
+<?php $page_title = "Manage News"?>
+<?php include('layouts/header.php');?>
 <?php
 
 $page = !empty($_GET['page'])?(int)$_GET['page']:1;

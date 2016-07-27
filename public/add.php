@@ -1,5 +1,6 @@
 <?php require_once('../includes/initialize.php'); ?>
 <?php $current_page = 'add_news';?>
+<?php $page_title = "Add News"?>
 <?php include('layouts/header.php');?>
 <?
 

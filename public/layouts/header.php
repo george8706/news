@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>News</title>
+  <title><?php echo $page_title?></title>
   <link href="/css/jquery-ui.css" rel="stylesheet" />
   <link href="/css/jquery-ui.theme.min.css" rel="stylesheet" />
   <link href="/css/bootstrap.min.css" rel="stylesheet">

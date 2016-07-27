@@ -1,7 +1,7 @@
 <?php require_once('../includes/initialize.php');?>
 
 <?php $current_page = '';?>
-
+<?php $page_title = "Edit News"?>
 <?php include ('layouts/header.php');?>
 
 <?php
