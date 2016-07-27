@@ -14,7 +14,7 @@ if(!isset($_POST['submitButton'])) {
     $text = $news_one->text;
     $date = date('d-m-Y',$news_one->date);
     }else{
-    
+
         $caption = htmlentities($_POST['caption']);
         $text = htmlentities($_POST['text']);
         $date = date('d-m-Y',htmlentities($_POST['date']));
@@ -45,7 +45,6 @@ if(!isset($_POST['submitButton'])) {
             } else {
 
                 $flash->error("Fail adding new record");
-                //redirect_to("edit.php?id=$id");
             }
     }
 }
@@ -56,7 +55,6 @@ if(!isset($_POST['submitButton'])) {
             <div class="page-header">
                 <h3>Edit News</h3>
             </div>
-            <?php //if(!empty($news_one)){?>
             <form id="newsForm" action="edit.php?id=<?php echo $news_one->id?>" method="post">
                 <div class="form-group has-feedback <?php if(isset($errors['caption'])) echo "has-error";?>">
                     <label for="caption">Caption</label>
@@ -85,7 +83,6 @@ if(!isset($_POST['submitButton'])) {
                 </div>
 
             </form>
-            <?php //}?>
         </div>
     </div>
 
