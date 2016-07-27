@@ -1,7 +1,7 @@
 <?php require_once('../includes/initialize.php');?>
 
 <?php $current_page = 'home';?>
-<?php include('layouts/header.php');/*include_layout_template('header.php')*/;?>
+<?php include('layouts/header.php');?>
 <?php
 
 $page = !empty($_GET['page'])?(int)$_GET['page']:1;
